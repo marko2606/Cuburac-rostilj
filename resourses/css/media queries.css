@@ -1,0 +1,127 @@
+@media screen and (max-width: 920px) {
+    
+    .dostava_info_container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+    }
+    
+    .dostava_info {
+        height: 400px;
+        margin-top: 20px;
+    }
+    
+    .dostava {
+        width: 90%;
+        margin: 0;
+    }
+    
+    .galery a {
+        max-width: 33%;
+    }
+    
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .cenovnik_prices {
+        width: 95%;
+        margin: 40px auto;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    
+    .cenovnik_upper_info_container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .cenovnik_upper_info {
+        margin-bottom: 20px;
+    }
+    
+    .cenovnik_prices {
+        margin-top: 40px;
+    }
+    
+    .navigation_container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .navigation_container nav {
+        position: static;
+    }
+    
+    .logo {
+        margin: 20px 0;
+    } 
+    
+    .hero_textbox {
+        left: 5%;
+        top: 65%;
+        height: 230px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 550px) {
+    
+    .navigation_container nav {
+        display: block;
+        
+    }
+    
+    .navigation_container nav a {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+    .cenovnik_prices {
+        font-size: 18px;
+    }
+    .hero_textbox {
+        top: 55%;
+    }
+}
+
+
+@media screen and (max-width: 355px) {
+    .cenovnik_prices p {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+

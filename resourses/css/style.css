@@ -1,0 +1,413 @@
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    /*overflow-x: hidden;*/ 
+    height: 100%;
+}
+
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+/* color: #e67e22 */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+a:link,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+/* HERO/NAVIGATION STYLE */
+/* ----------------------------------------------- */
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/hero-image.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+        
+}
+
+.navigation_container {
+    
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 120px; 
+    -webkit-box-align: center; 
+    -ms-flex-align: center; 
+    -ms-grid-row-align: center; 
+    align-items: center;
+}
+
+.logo {
+    -ms-flex-item-align: center;
+    align-self: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 15px;    
+}
+
+nav {
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    right: 0%;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+nav a {
+    margin-right: 30px;
+    padding-bottom: 5px;
+}
+
+nav a:hover
+{
+    border-bottom: 2px solid #e67e22;
+}
+
+.hero_textbox {
+    
+    position: absolute;
+    left: 15%;
+    top: 35%;
+}
+
+
+
+h1,
+h2,
+h3 {
+    color: #555;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    line-height: 130%;
+    color: #fff;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* ----- BUTTONS ----- */
+
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+
+/* ----------------------------------------------- */
+/* CENOVNIK STYLE */
+/* ----------------------------------------------- */
+
+i {
+    color: black;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: 
+}
+
+.cenovnik_upper_info_container {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+}
+
+.cenovnik_upper_info {
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.cenovnik_upper_info p {
+    line-height: 130%;
+}
+
+/*PRICES STYLE*/
+
+.cenovnik_prices {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.item_name {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 1px dotted black;
+    margin-bottom: 20px;
+}
+
+.item_name:hover {
+    cursor:pointer;
+}
+
+.item_name:hover .price {
+    letter-spacing: 2px;
+}
+
+.item_name:hover {
+    border-bottom:1px solid #e67e22;
+}
+
+.price {
+    position: absolute;
+    right: 0;
+    color: #e67e22;
+    font-weight: 400;
+    -webkit-transition: letter-spacing .3s, border-bottom .3s;
+    transition: letter-spacing .3s, border-bottom .3s;
+}
+
+/*GALERY STYLE*/
+
+.galery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.img_food {
+    background-color: #fff;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.img_food:hover {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.galery a {
+    max-width: 20%;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+
+/* ----------------------------------------------- */
+/* DOSTAVA STYLE */
+/* ----------------------------------------------- */
+
+
+.dostava_info_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   
+}
+.dostava_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+   
+}
+
+.dostava_map {
+    margin-left: 10px;
+    height: 400px;
+}
+
+.dostava_info h3 {
+    text-align: center;
+}
+
+.dostava {
+    width: 50%;
+}
+
+.dostava_info div {
+    position: relative;    
+    height: 50px;
+}
+
+.dostava_info i {
+    position: absolute;
+    left: 50px;
+    color: #e67e22
+}
+
+.dostava_info p {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    
+}
+
+/* ----------------------------------------------- */
+/* HVALA NA POSETI STYLE */
+/* ----------------------------------------------- */
+
+.footer {
+    margin-top: 80px;
+    background-color: #eee;
+}
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer .logo {
+    margin: 30px 0;
+}
+
+/* ----------------------------------------------- */
+/* BACK TO TOP STYLE */
+/* ----------------------------------------------- */
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 30px;
+    background: #ccc;
+    color: #e67e22;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    -webkit-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    border-radius: 50%;
+}
+#back-to-top:hover {
+    background: #e9ebec;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#content {
+    height: 2000px;
+}
