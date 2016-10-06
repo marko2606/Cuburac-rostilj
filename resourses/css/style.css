@@ -38,6 +38,11 @@ a:visited {
     text-decoration: none;
 }
 
+.call, .call:visited {
+    color: #1400ff !important;
+}
+
+
 /* ----------------------------------------------- */
 /* HERO/NAVIGATION STYLE */
 /* ----------------------------------------------- */
