@@ -225,7 +225,7 @@ i {
 }
 
 .item_name:hover {
-    cursor:pointer;
+    cursor:default;
 }
 
 .item_name:hover .price {
