@@ -25,11 +25,7 @@ html, body {
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
 
-
 /* color: #e67e22 */
-
-
-
 
 .row {
     max-width: 1140px;
@@ -49,8 +45,8 @@ a:visited {
 header {
     position: relative;
     height: 100vh;
-    background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/hero-image.jpg);
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/hero-image.jpg);
+    background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/hero-image-min.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Images/hero-image-min.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
