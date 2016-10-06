@@ -77,10 +77,15 @@
         bottom: 5%
     }
     
+    
+    
+    
+}
+
+@media screen and (max-width: 680px) and (orientation: landscape) {
     h1 {
         font-size: 26px;
     }
-    
     
 }
 
