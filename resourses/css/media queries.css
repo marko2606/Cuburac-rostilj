@@ -101,9 +101,15 @@
         margin: 0 auto;
         margin-bottom: 15px;
     }
+    
+    .newRow {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 450px) {
+    
+    
     
     .cenovnik_prices {
         font-size: 18px;

@@ -42,6 +42,10 @@ a:visited {
     color: #1400ff !important;
 }
 
+.newRow {
+    display: none;
+}
+
 
 /* ----------------------------------------------- */
 /* HERO/NAVIGATION STYLE */
