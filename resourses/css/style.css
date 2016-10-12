@@ -63,7 +63,6 @@ header {
 }
 
 .navigation_container {
-    
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -110,8 +109,6 @@ nav a:hover
     top: 35%;
 }
 
-
-
 h1,
 h2,
 h3 {
@@ -148,7 +145,6 @@ h2:after {
 
 
 /* ----- BUTTONS ----- */
-
 
 .btn:link,
 .btn:visited {
@@ -310,7 +306,6 @@ figure {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-   
 }
 .dostava_info {
     display: -webkit-box;
@@ -322,7 +317,6 @@ figure {
     flex-direction: column;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-   
 }
 
 .dostava_map {
@@ -353,7 +347,6 @@ figure {
     position: absolute;
     left: 120px;
     top: 10px;
-    
 }
 
 /* ----------------------------------------------- */
